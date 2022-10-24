@@ -1,150 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap" rel="stylesheet">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app">
-      <div class="main-screen flex flex-col lg:flex-row lg:w-screen lg:h-screen">
-        <div class="lg:w-[60%] w-screen h-screen bg-[#C2ED06] flex justify-center items-center">
-          <div class="main-text uppercase md:text-[9rem] text-[3rem] font-black text-black tracking-tight md:leading-[7rem] leading-[3rem]">
-            <div>salaza<span
-              class="inline-block"
-              data-lg-scroll
-              data-lg-scroll-animate="{'y': ['0%', '-100%']}"
-              >r</span> <br>
-              <span
-              class="inline-block"
-              data-lg-scroll
-              data-lg-scroll-animate="{'y': ['0%', '100%']}"
-              >m</span>
-              <span class="absolute">usic</span>
-              </div>
-          </div>
-        </div>
-        <div class="lg:w-[40%] w-screen h-screen flex justify-center items-center bg-[#222]">
 
-<div class="md:w-[60%] w-[94%] h-[80%] bg-black text-white device flex flex-col justify-center items-center">
-  <div class="album-cover w-[80%] h-[15rem] bg-[url(/img/2.jpg)] bg-cover bg-center"
-  data-lg-scroll
-  data-lg-scroll-animate="{'background-y': ['0%', '50%']}"
-  ></div>
-  <div class="song-name text-left w-[80%]">All in the air</div>
-  <div class="song-title text-left w-[80%] font-bold uppercase">Brian Kemoze</div>
-  <div class="song-progress w-[80%] h-[0.2rem] bg-[#c2c2c2] mt-4 flex items-center overflow-hidden">
-    <div class="current-progress w-[40%] h-full bg-white"
-    data-lg-scroll
-    data-lg-scroll-animate="{'scaleX': ['1.5', '4.5']}"
-    ></div>
-    <!-- scale x- 4.5 -->
-    <div class="progress-knob h-[0.5rem] w-[0.5rem] bg-white rounded-full"></div>
-  </div>
-  <div class="song-time w-[80%] flex justify-between items-center text-[0.6rem]">
-    <div class="start-time">0:36</div>
-    <div class="end-time">3:00</div>
-  </div>
-  <div class="song-controls flex justify-between items-center w-[80%]">
-    <div class="sound-device w-[0.8rem] h-[0.8rem] rounded-full flex justify-center items-center opacity-70">
-      <svg width="32" height="32" viewBox="0 0 24 24"><circle cx="12" cy="15" r="3" fill="currentColor"/><path fill="currentColor" d="M18 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-6 2a2 2 0 1 1-2 2a2 2 0 0 1 2-2zm0 16a5 5 0 1 1 5-5a5 5 0 0 1-5 5z"/></svg>
-    </div>
-    <div class="prev-song w-[1.5rem] h-[1.5rem] rounded-full flex justify-center items-center">
-      <svg width="32" height="32" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10c5.515 0 10-4.486 10-10S17.515 2 12 2zm4 14l-6-4v4H8V8h2v4l6-4v8z" fill="currentColor"/></svg>
-    </div>
-    <div class="play-song w-[2rem] h-[2rem] rounded-full flex justify-center items-center">
-      <svg width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2S2 6.486 2 12s4.486 10 10 10zM10 7l6 5l-6 5V7z"/></svg>
-    </div>
-    <div class="next-song w-[1.5rem] h-[1.5rem] rounded-full flex justify-center items-center">
-      <svg width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zm4 14h-2v-4l-6 4V8l6 4V8h2v8z"/></svg>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap" rel="stylesheet">
+  <title>Vite App</title>
+</head>
 
-    <div class="like-song w-[0.8rem] h-[0.8rem] rounded-full flex justify-center items-center opacity-70">
-      <svg width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558a5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z"/></svg>
-    </div>
-
-  </div>
-  <div class="bottom-bar md:hidden w-[40%] h-[0.3rem] rounded-full bg-white mt-12 opacity-75"></div>
-</div>
-
-        </div>
-      </div>
-      <div class="events px-10 py-9 text-black">
-        <div class="section-title font-black uppercase text-3xl flex">
-          <div class="box w-9 h-9 bg-black mr-4"></div>
-          <div>upcoming events</div>
-
-
-        </div>
-        <div class="py-7">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 w-full">
-            <div class="event my-5">
-              <div class="event-image h-[16rem] md:h-[24rem] bg-[url(/img/3.jpg)] bg-center bg-cover"></div>
-              <div class="event-date font-black text-orange-600 text-lg">26th November 2022</div>
-              <div class="event-title capitalize font-bold text-black text-[1.6rem]">The Sound Of RED</div>
-              <div class="event-description font-semibold">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni esse aperiam eum nesciunt. Quibusdam omnis suscipit harum, consequuntur?
-              </div>
-            </div>
-            <div class="event my-5">
-              <div class="event-image h-[16rem] md:h-[24rem] bg-[url(/img/4.jpg)] bg-center bg-cover"></div>
-              <div class="event-date font-black text-orange-600 text-lg">30th November 2022</div>
-              <div class="event-title capitalize font-bold text-black text-[1.6rem]">The Essentiality of music</div>
-              <div class="event-description font-semibold">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni esse aperiam eum nesciunt. Quibusdam omnis suscipit harum, consequuntur?
-              </div>
-            </div>
-            <div class="event my-5">
-              <div class="event-image h-[16rem] md:h-[24rem] bg-[url(/img/5.jpg)] bg-center bg-cover"></div>
-              <div class="event-date font-black text-orange-600 text-lg">12th December 2022</div>
-              <div class="event-title capitalize font-bold text-black text-[1.6rem]">Caspian essence</div>
-              <div class="event-description font-semibold">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni esse aperiam eum nesciunt. Quibusdam omnis suscipit harum, consequuntur?
-              </div>
-            </div>
-            <div class="event my-5">
-              <div class="event-image h-[16rem] md:h-[24rem] bg-[url(/img/6.jpg)] bg-center bg-cover"></div>
-              <div class="event-date font-black text-orange-600 text-lg">26th December 2022</div>
-              <div class="event-title capitalize font-bold text-black text-[1.6rem]">Finding the inner melody</div>
-              <div class="event-description font-semibold">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni esse aperiam eum nesciunt. Quibusdam omnis suscipit harum, consequuntur?
-              </div>
-            </div>
-            <div class="event my-5">
-              <div class="event-image h-[16rem] md:h-[24rem] bg-[url(/img/7.jpg)] bg-center bg-cover"></div>
-              <div class="event-date font-black text-orange-600 text-lg">1st January 2022</div>
-              <div class="event-title capitalize font-bold text-black text-[1.6rem]">New Year Resolution</div>
-              <div class="event-description font-semibold">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni esse aperiam eum nesciunt. Quibusdam omnis suscipit harum, consequuntur?
-              </div>
-            </div>
-            <div class="event my-5">
-              <div class="event-image h-[16rem] md:h-[24rem] bg-[url(/img/8.jpg)] bg-center bg-cover"></div>
-              <div class="event-date font-black text-orange-600 text-lg">22nd January 2022</div>
-              <div class="event-title capitalize font-bold text-black text-[1.6rem]">Celebrate the legends</div>
-              <div class="event-description font-semibold">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni esse aperiam eum nesciunt. Quibusdam omnis suscipit harum, consequuntur?
-              </div>
-            </div>
+<body>
+  <div id="app">
+    <div class="main-screen flex flex-col lg:flex-row lg:w-screen lg:h-screen">
+      <div class="lg:w-[60%] w-screen h-screen bg-[#C2ED06] flex justify-center items-center">
+        <div
+          class="main-text uppercase md:text-[9rem] text-[3rem] font-black text-black tracking-tight md:leading-[7rem] leading-[3rem]">
+          <div>salaza<span class="inline-block" data-lg-scroll data-lg-scroll-animate="{'y': ['0%', '-100%']}">r</span>
+            <br>
+            <span class="inline-block" data-lg-scroll data-lg-scroll-animate="{'y': ['0%', '100%']}">m</span>
+            <span class="absolute">usic</span>
           </div>
         </div>
       </div>
-      <div class="newsletter h-screen bg-[#C2ED06] flex flex-col justify-center items-center">
-        <div class="subscribe-text text-[2rem] md:text-[8rem] text-center font-black uppercase">Subscribe
+      <div class="lg:w-[40%] w-screen h-screen flex justify-center items-center bg-[#222]">
 
-          <br>
-          <div class="text-[1rem] md:text-[4rem]">
-            to our newsletter
+        <div class="md:w-[60%] w-[94%] h-[80%] bg-black text-white device flex flex-col justify-center items-center">
+          <div class="album-cover w-[80%] h-[15rem] bg-[url(/img/2.jpg)] bg-cover bg-center" data-lg-scroll
+            data-lg-scroll-animate="{'background-y': ['0%', '50%']}"></div>
+          <div class="song-name text-left w-[80%]">All in the air</div>
+          <div class="song-title text-left w-[80%] font-bold uppercase">Brian Kemoze</div>
+          <div class="song-progress w-[80%] h-[0.2rem] bg-[#c2c2c2] mt-4 flex items-center overflow-hidden">
+            <div class="current-progress w-[40%] h-full bg-white" data-lg-scroll
+              data-lg-scroll-animate="{'scaleX': ['1.5', '4.5']}"></div>
+            <!-- scale x- 4.5 -->
+            <div class="progress-knob h-[0.5rem] w-[0.5rem] bg-white rounded-full"></div>
           </div>
+          <div class="song-time w-[80%] flex justify-between items-center text-[0.6rem]">
+            <div class="start-time">0:36</div>
+            <div class="end-time">3:00</div>
+          </div>
+          <div class="song-controls flex justify-between items-center w-[80%]">
+            <div class="sound-device w-[0.8rem] h-[0.8rem] rounded-full flex justify-center items-center opacity-70">
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <circle cx="12" cy="15" r="3" fill="currentColor" />
+                <path fill="currentColor"
+                  d="M18 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-6 2a2 2 0 1 1-2 2a2 2 0 0 1 2-2zm0 16a5 5 0 1 1 5-5a5 5 0 0 1-5 5z" />
+              </svg>
+            </div>
+            <div class="prev-song w-[1.5rem] h-[1.5rem] rounded-full flex justify-center items-center">
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10c5.515 0 10-4.486 10-10S17.515 2 12 2zm4 14l-6-4v4H8V8h2v4l6-4v8z"
+                  fill="currentColor" />
+              </svg>
+            </div>
+            <div class="play-song w-[2rem] h-[2rem] rounded-full flex justify-center items-center">
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2S2 6.486 2 12s4.486 10 10 10zM10 7l6 5l-6 5V7z" />
+              </svg>
+            </div>
+            <div class="next-song w-[1.5rem] h-[1.5rem] rounded-full flex justify-center items-center">
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zm4 14h-2v-4l-6 4V8l6 4V8h2v8z" />
+              </svg>
+            </div>
+
+            <div class="like-song w-[0.8rem] h-[0.8rem] rounded-full flex justify-center items-center opacity-70">
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558a5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z" />
+              </svg>
+            </div>
+
+          </div>
+          <div class="bottom-bar md:hidden w-[40%] h-[0.3rem] rounded-full bg-white mt-12 opacity-75"></div>
         </div>
-        <div class="email">
-          <input type="email" name="email" id="email" class="w-[12rem] md:w-[39rem] h-[3rem] md:h-[6rem] text-black font-black text-[1.3rem] uppercase text-center px-7 outline-none" placeholder="EMAIL">
-        </div>
-        <div class="submit w-[12rem] md:w-[39rem] h-[3rem] md:h-[6rem] bg-black text-[#C2ED06] font-black text-[1.3rem] uppercase text-center px-7 py-7 outline-none cursor-pointer flex items-center justify-center">submit</div>
+
       </div>
     </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    <div class="events px-10 py-9 text-black">
+      <div class="section-title font-black uppercase text-3xl flex">
+        <div class="box w-9 h-9 bg-black mr-4"></div>
+        <div>upcoming events</div>
+
+
+      </div>
+      <div class="py-7">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 w-full">
+          <div class="event my-5">
+            <div class="event-image h-[16rem] md:h-[24rem] bg-[url(/img/3.jpg)] bg-center bg-cover"></div>
+            <div class="event-date font-black text-orange-600 text-lg">26th November 2022</div>
+            <div class="event-title capitalize font-bold text-black text-[1.6rem]">The Sound Of RED</div>
+            <div class="event-description font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni esse aperiam eum nesciunt. Quibusdam omnis
+              suscipit harum, consequuntur?
+            </div>
+          </div>
+          <div class="event my-5">
+            <div class="event-image h-[16rem] md:h-[24rem] bg-[url(/img/4.jpg)] bg-center bg-cover"></div>
+            <div class="event-date font-black text-orange-600 text-lg">30th November 2022</div>
+            <div class="event-title capitalize font-bold text-black text-[1.6rem]">The Essentiality of music</div>
+            <div class="event-description font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni esse aperiam eum nesciunt. Quibusdam omnis
+              suscipit harum, consequuntur?
+            </div>
+          </div>
+          <div class="event my-5">
+            <div class="event-image h-[16rem] md:h-[24rem] bg-[url(/img/5.jpg)] bg-center bg-cover"></div>
+            <div class="event-date font-black text-orange-600 text-lg">12th December 2022</div>
+            <div class="event-title capitalize font-bold text-black text-[1.6rem]">Caspian essence</div>
+            <div class="event-description font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni esse aperiam eum nesciunt. Quibusdam omnis
+              suscipit harum, consequuntur?
+            </div>
+          </div>
+          <div class="event my-5">
+            <div class="event-image h-[16rem] md:h-[24rem] bg-[url(/img/6.jpg)] bg-center bg-cover"></div>
+            <div class="event-date font-black text-orange-600 text-lg">26th December 2022</div>
+            <div class="event-title capitalize font-bold text-black text-[1.6rem]">Finding the inner melody</div>
+            <div class="event-description font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni esse aperiam eum nesciunt. Quibusdam omnis
+              suscipit harum, consequuntur?
+            </div>
+          </div>
+          <div class="event my-5">
+            <div class="event-image h-[16rem] md:h-[24rem] bg-[url(/img/7.jpg)] bg-center bg-cover"></div>
+            <div class="event-date font-black text-orange-600 text-lg">1st January 2022</div>
+            <div class="event-title capitalize font-bold text-black text-[1.6rem]">New Year Resolution</div>
+            <div class="event-description font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni esse aperiam eum nesciunt. Quibusdam omnis
+              suscipit harum, consequuntur?
+            </div>
+          </div>
+          <div class="event my-5">
+            <div class="event-image h-[16rem] md:h-[24rem] bg-[url(/img/8.jpg)] bg-center bg-cover"></div>
+            <div class="event-date font-black text-orange-600 text-lg">22nd January 2022</div>
+            <div class="event-title capitalize font-bold text-black text-[1.6rem]">Celebrate the legends</div>
+            <div class="event-description font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni esse aperiam eum nesciunt. Quibusdam omnis
+              suscipit harum, consequuntur?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="newsletter h-screen bg-[#C2ED06] flex flex-col justify-center items-center">
+      <div class="subscribe-text text-[2rem] md:text-[8rem] text-center font-black uppercase">Subscribe
+
+        <br>
+        <div class="text-[1rem] md:text-[4rem]">
+          to our newsletter
+        </div>
+      </div>
+      <div class="email">
+        <input type="email" name="email" id="email"
+          class="w-[12rem] md:w-[39rem] h-[3rem] md:h-[6rem] text-black font-black text-[1.3rem] uppercase text-center px-7 outline-none"
+          placeholder="EMAIL">
+      </div>
+      <div
+        class="submit w-[12rem] md:w-[39rem] h-[3rem] md:h-[6rem] bg-black text-[#C2ED06] font-black text-[1.3rem] uppercase text-center px-7 py-7 outline-none cursor-pointer flex items-center justify-center">
+        submit</div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
